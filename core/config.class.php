@@ -14,8 +14,8 @@ class Config {
 
             'api_keys'          => ['test_key', 'dat123'],
 
-            'project_url'       => 'http://localhost/project',
-            'cdn_url'           => 'http://localhost/project/assets',
+            'project_url'       => 'http://localhost/skeleton',
+            'cdn_url'           => 'http://localhost/skeleton/assets',
 
             'module_directory'  => 'modules',
             'module_files'      => ['ajax.class.php', 'controller.class.php', 'model.class.php'],
