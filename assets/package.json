@@ -1,0 +1,27 @@
+{
+  "name": "skeleton",
+  "version": "1.0.0",
+  "description": "A clean MVC",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "node gulpfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "skeleton"
+  },
+  "keywords": [
+    "None"
+  ],
+  "author": "Thrallix",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {
+    "bootswatch": "^4.3.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}
