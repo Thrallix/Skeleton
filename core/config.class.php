@@ -9,10 +9,10 @@ class Config {
     public static function fetchConfig() {
 
         return [
-            'project_name'      => 'Project',
+            'project_name'      => 'Skeleton',
             'project_build'     => '1.0',
 
-            'api_keys'          => ['test_key', 'dat123'],
+            'api_keys'          => [],
 
             'project_url'       => 'http://localhost/skeleton',
             'cdn_url'           => 'http://localhost/skeleton/assets',
