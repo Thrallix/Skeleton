@@ -9,8 +9,9 @@ Will soon add database support :)
 
 #### Hint:
 
-* Make sure you have **NodeJS** installed.\
-You can find it here: https://nodejs.org/en/
+* Make sure you have **NodeJS** and **GulpJS** installed.\
+You can find it here: https://nodejs.org/en/ and https://gulpjs.com/
 * After installing, head over to `/assets` and run "npm install".
-* You can now use `gulp watch` to build your SCSS and JavaScript.
+* You can now use `gulp watch` to update your SCSS and JavaScript.
 * The proper way to do this is by editing `assets/resources/src`.
+* Edit the `/core/config.class.php` file to read your new project and cdn url.

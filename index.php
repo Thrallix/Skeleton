@@ -17,6 +17,7 @@ define('action', Functions::getModuleAction());
 define('home', config['project_url']);
 define('cdn', config['cdn_url']);
 define('name', config['project_name']);
+define('build', config['project_build']);
 
 //Set resources
 Loader::setResource('FontAwesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css', 'head', 'css');

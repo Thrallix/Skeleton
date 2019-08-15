@@ -8,7 +8,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="<?=home?>">Home</a>
                 </li>
             </ul>
@@ -19,7 +19,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#"><i class="fa fa-key fa-fw"></i> Login to <?=name?></a>
-                        <a class="dropdown-item" href="#"><i class="fa fa-user-plus fa-fw"></i> Create <?=name?> account</a>
+                        <a class="dropdown-item" href="<?=home?>/users"><i class="fa fa-user-plus fa-fw"></i> Create <?=name?> account</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#"><i class="fa fa-lock fa-fw"></i> Forgot password?</a>
                     </div>

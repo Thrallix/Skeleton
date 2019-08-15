@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="offset-3 col-6">
+        <div class="offset-md-3 col-md-6 col-12">
             <div class="card">
                 <div class="card-body">
                     <h3>Register</h3>
@@ -31,6 +31,9 @@
                             </label>
                         </div>
                         <hr>
+                        <a href="<?=home?>" class="btn btn-warning">
+                            <i class="fa fa-arrow-left"></i> Return
+                        </a>
                         <button type="submit" class="btn btn-primary float-right">
                             <i class="fa fa-check"></i> Submit
                         </button>
