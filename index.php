@@ -19,7 +19,6 @@ define('cdn', config['cdn_url']);
 define('name', config['project_name']);
 
 //Set resources
-//Loader::setResource('Config', config['cdn_url'] . '/css/config.scss', 'head', 'css');
 Loader::setResource('FontAwesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css', 'head', 'css');
 Loader::setResource('Main', cdn . '/resources/dist/main.css', 'head', 'css');
 

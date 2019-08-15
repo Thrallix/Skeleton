@@ -21,6 +21,25 @@ class Functions {
     }
 
     /**
+     * Escapes
+     * @param $var
+     * @return string
+     */
+    public static function escape($var) {
+        return htmlspecialchars($var);
+    }
+
+    /**
+     * Escapes array
+     */
+    public static function escapeArray($var = []) {
+        foreach($var as $k => $v) {
+            $var[$k] = htmlspecialchars($v);
+        }
+        return $var;
+    }
+
+    /**
      * Fetches parameters from URL
      * @return array
      */
