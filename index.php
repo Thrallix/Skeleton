@@ -12,6 +12,8 @@ define('config', Config::fetchConfig());
 define('params', Functions::fetchParams());
 define('module', Functions::getModule());
 define('action', Functions::getModuleAction());
+
+//Convenient params
 define('home', config['project_url']);
 define('cdn', config['cdn_url']);
 define('name', config['project_name']);
