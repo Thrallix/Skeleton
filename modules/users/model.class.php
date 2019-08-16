@@ -2,7 +2,7 @@
 
 class Model {
 
-    public static array $form_lengths = ['username' => [5,20], 'email' => [5,78], 'pass' => [8,500]];
+    public static $form_lengths = ['username' => [5,20], 'email' => [5,78], 'pass' => [8,500]];
 
     /**
      * @param $data
