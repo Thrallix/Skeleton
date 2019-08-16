@@ -1,8 +1,11 @@
 <?php
 
+# Enable development mode?
+define('devMode', true);
+
 //Error logging
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+if (devMode)
+error_reporting(E_ALL); ini_set('display_errors', 1);
 
 //Autoload core files
 require 'core/autoload.php';

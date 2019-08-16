@@ -14,6 +14,8 @@ class Config {
 
             'api_keys'          => [],
 
+            'hash_options'      => ['cost' => 12],
+
             'project_url'       => 'http://localhost/skeleton',
             'cdn_url'           => 'http://localhost/skeleton/assets',
 
@@ -25,11 +27,12 @@ class Config {
                 '404' => 'not_found'
             ],
 
+
             'mysql'             => [
                 'host' => 'localhost',
                 'user' => 'root',
                 'pass' => '',
-                'datb' => 'project',
+                'datb' => 'skeleton',
                 'port' => 3306
             ]
         ];

@@ -1,6 +1,37 @@
 <?php
 
+/**
+ * Class Func
+ * @author Thrallix
+ */
 class Functions {
+
+    /**
+     * @param $input
+     * @param $pw
+     * @return bool
+     */
+    public static function verifyPassword($input, $pw) {
+        return password_verify($input, $pw);
+    }
+
+    /**
+     * @param $pw
+     * @return bool|string
+     */
+    public static function securePassword($pw) {
+        return password_hash($pw, PASSWORD_BCRYPT, config['hash_options']);
+    }
+
+    /**
+     * @return mixed
+     */
+    public static function getIP() {
+        if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) { //CloudFlare?
+            $_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+        }
+        return $_SERVER['REMOTE_ADDR'];
+    }
 
     /**
      * Prints value with pre

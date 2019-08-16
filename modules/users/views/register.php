@@ -3,7 +3,7 @@
         <div class="offset-md-3 col-md-6 col-12">
             <div class="card">
                 <div class="card-body">
-                    <h3>Register</h3>
+                    <h3>Register: <?=Functions::getIP()?></h3>
                     <hr>
                     <form method="POST" action="" name="register" default="true">
                         <div class="input-group">
