@@ -4,13 +4,14 @@ class Model {
 
     public static $form_lengths = ['username' => [5,20], 'email' => [5,78], 'pass' => [8,500]];
 
+    /**
+     * @param $data
+     */
     public static function login($data) {
 
         if (!empty($data['person']) && !empty($data['password'])) {
-
-            $person_result = db::query('
-                SELECT username,pass FROM `users` 
-                WHERE username = :person OR email_address = :person', ['person' => $data['person']], 'row');
+            $query = 'SELECT username,pass FROM `users` WHERE username = :person OR email_address = :person';
+            $person_result = db::query($query, ['person' => $data['person']], 'row');
 
             if (!empty($person_result) && Functions::verifyPassword($data['password'], $person_result['pass'])) {
                 Ajax::setResult(true, 'You have succesfully logged in, ' . $person_result['username'] . '!');
