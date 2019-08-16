@@ -4,6 +4,25 @@ class Model {
 
     public static $form_lengths = ['username' => [5,20], 'email' => [5,78], 'pass' => [8,500]];
 
+    public static function login($data) {
+
+        if (!empty($data['person']) && !empty($data['password'])) {
+
+            $person_result = db::query('
+                SELECT username,pass FROM `users` 
+                WHERE username = :person OR email_address = :person', ['person' => $data['person']], 'row');
+
+            if (!empty($person_result) && Functions::verifyPassword($data['password'], $person_result['pass'])) {
+                Ajax::setResult(true, 'You have succesfully logged in, ' . $person_result['username'] . '!');
+            } else {
+                Ajax::setResult(false, 'You entered an invalid username, password or e-mail.');
+            }
+        } else {
+            Ajax::setResult(false, 'Please make sure either your username or e-mail are entered, along with your password.');
+        }
+
+    }
+
     /**
      * @param $data
      */

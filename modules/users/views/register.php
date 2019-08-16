@@ -31,8 +31,8 @@
                             </label>
                         </div>
                         <hr>
-                        <a href="<?=home?>" class="btn btn-warning">
-                            <i class="fa fa-arrow-left"></i> Return
+                        <a href="<?=home?>/users/login" class="btn btn-warning">
+                            <i class="fa fa-arrow-left"></i> Already have an account?
                         </a>
                         <button type="submit" class="btn btn-primary float-right">
                             <i class="fa fa-check"></i> Submit

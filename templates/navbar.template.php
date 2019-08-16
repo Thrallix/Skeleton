@@ -18,8 +18,8 @@
                         <i class="fa fa-user"></i> Your account
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"><i class="fa fa-key fa-fw"></i> Login to <?=name?></a>
-                        <a class="dropdown-item" href="<?=home?>/users"><i class="fa fa-user-plus fa-fw"></i> Create <?=name?> account</a>
+                        <a class="dropdown-item" href="<?=home?>/users/login"><i class="fa fa-key fa-fw"></i> Login to <?=name?></a>
+                        <a class="dropdown-item" href="<?=home?>/users/register"><i class="fa fa-user-plus fa-fw"></i> Create <?=name?> account</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#"><i class="fa fa-lock fa-fw"></i> Forgot password?</a>
                     </div>
